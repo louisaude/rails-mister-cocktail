@@ -5,8 +5,9 @@
         <%= simple_form_for @cocktail do |f| %>
         <%= f.input :name %>
         <%= f.submit class: 'btn btn-primary' %>
+          <%= f.input :photo %>
+          <%= link_to 'Back to cocktail list', cocktails_path, class: 'btn btn-secondary' %>
       <% end %>
-      <%= link_to 'Back to cocktail list', cocktails_path, class: 'btn btn-secondary' %>
     </div>
   </div>
 </div>
